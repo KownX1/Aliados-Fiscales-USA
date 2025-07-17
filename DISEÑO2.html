@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juan Pérez | Consultor Fiscal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #f9a825;
+    }
+
+    nav {
+      background: #2a2a2a;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #f9a825;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .intro-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #f9a825;
+      display: block;
+      margin: 20px auto;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: #f9a825;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    }
+
+    .testimonial {
+      background: #1a1a1a;
+      border-left: 5px solid #f9a825;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 10px;
+      color: #f9a825;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1em;
+      background: #2c2c2c;
+      color: #fff;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #bbb;
+    }
+
+    .button {
+      background: #f9a825;
+      color: #121212;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #ffe066;
+    }
+
+    footer {
+      background: #1f1f1f;
+      text-align: center;
+      color: #bbb;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .social {
+      margin-top: 10px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #f9a825;
+      font-size: 1.4em;
+      text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Juan Pérez</h1>
+    <p>Consultor Fiscal | Estrategias para negocios | Bookkeeping</p>
+    <img src="https://via.placeholder.com/150" class="intro-img" alt="Juan Pérez" />
+  </header>
+
+  <nav>
+    <a href="#biografia">Biografía</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="biografia">
+      <h2>Biografía</h2>
+      <p>Hola, soy Juan Pérez. Ayudo a pequeños negocios y profesionales independientes a organizar su contabilidad y planificar sus impuestos con estrategias que minimizan riesgos y aumentan el ahorro. Con más de 10 años de experiencia en el mundo fiscal, me especializo en LLCs, corporaciones y estructura fiscal efectiva.</p>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Creación de Negocios</h3>
+          <p>Ayuda con la formación legal de LLCs, S-Corps y C-Corps en EE.UU.</p>
+        </div>
+        <div class="card">
+          <h3>Contabilidad Mensual</h3>
+          <p>Bookkeeping con QuickBooks y reportes financieros adaptados a tu negocio.</p>
+        </div>
+        <div class="card">
+          <h3>Asesoría Fiscal</h3>
+          <p>Consultoría en estructuras fiscales, deducciones y estrategias para pagar menos legalmente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios">
+      <h2>Testimonios</h2>
+      <div class="testimonial">
+        “Juan me ayudó a transformar mi pequeño negocio en una empresa organizada. Ahora entiendo mis finanzas y ahorro más.” 
+        <strong>- Mariana L.</strong>
+      </div>
+      <div class="testimonial">
+        “Muy profesional y claro. Me abrió una LLC y se encargó de todo. Recomendado al 100%.” 
+        <strong>- Andrés C.</strong>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/400x250" alt="Consultoría" />
+        <img src="https://via.placeholder.com/400x250" alt="Certificado IRS" />
+        <img src="https://via.placeholder.com/400x250" alt="Clientes satisfechos" />
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>📍 Austin, TX</p>
+      <p>📞 512-987-6543</p>
+      <p>📧 juan@correo.com</p>
+      <a href="https://wa.me/15129876543" class="button">Enviar WhatsApp</a>
+
+      <form id="contactForm">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="correo" placeholder="Tu correo" required />
+        <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit" class="button">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Juan Pérez | Todos los derechos reservados</p>
+    <div class="social">
+      <a href="https://facebook.com">🌐</a>
+      <a href="https://instagram.com">📷</a>
+      <a href="mailto:juan@correo.com">✉️</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById(\"contactForm\").addEventListener(\"submit\", function(e) {
+      e.preventDefault();
+      alert(\"¡Gracias por tu mensaje! Te responderé pronto.\");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>María López | Preparadora Fiscal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fefefe;
+      color: #333;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=1650&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+    }
+
+    nav {
+      background: #f9a825;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #1a237e;
+      margin-bottom: 15px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 20px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .icon-box {
+      flex: 1;
+      min-width: 240px;
+      background: #f1f1f1;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .icon-box i {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #f9a825;
+    }
+
+    .testimonial {
+      background: #fffde7;
+      padding: 30px;
+      border-radius: 12px;
+      font-style: italic;
+      border-left: 6px solid #f9a825;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #1a237e;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    .button {
+      background: #1a237e;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #3949ab;
+    }
+
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .social a {
+      color: #f9a825;
+      margin: 0 10px;
+      font-size: 1.4em;
+      text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .icons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>María López</h1>
+      <p>Preparadora Fiscal | Ayudando a familias como la tuya</p>
+    </div>
+  </section>
+
+  <nav>
+    <a href="#historia">Mi Historia</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#testimonio">Testimonio</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="historia">
+      <h2>Mi Historia</h2>
+      <p>Soy una madre, mujer inmigrante y profesional que conoce de cerca las luchas fiscales que enfrentamos. Con más de 12 años de experiencia, he ayudado a cientos de familias a obtener sus ITIN, créditos por hijos y a entender cómo funciona el sistema tributario en EE.UU.</p>
+    </section>
+
+    <section id="servicios">
+      <h2>¿Cómo puedo ayudarte?</h2>
+      <div class="icons">
+        <div class="icon-box">
+          <i class="bi bi-house-heart"></i>
+          <h4>Taxes Familiares</h4>
+          <p>Preparación segura, rápida y confiable de tus impuestos personales.</p>
+        </div>
+        <div class="icon-box">
+          <i class="bi bi-person-vcard"></i>
+          <h4>ITIN & Renovación</h4>
+          <p>Te ayudo con la solicitud o renovación del ITIN para ti o tu familia.</p>
+        </div>
+        <div class="icon-box">
+          <i class="bi bi-piggy-bank-fill"></i>
+          <h4>Créditos por Hijos</h4>
+          <p>Obtén los reembolsos que te corresponden por tu familia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS REDISEÑADOS -->
+<section id="testimonio">
+  <h2>Lo que dicen de mí</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <div style="flex: 1; min-width: 280px; background: #fffde7; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); position: relative;">
+      
+      <p style="font-style: italic; margin-top: 30px;">“Gracias a María recibí más de $5,000 en reembolso. Fue amable, clara y me explicó todo paso a paso.”</p>
+      <strong style="color: #1a237e; display: block; margin-top: 10px;">– Rosa Gutiérrez</strong>
+    </div>
+    <div style="flex: 1; min-width: 280px; background: #fffde7; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+      
+      <p style="font-style: italic; margin-top: 30px;">“La mejor preparadora que he tenido. Me ayudó a entender todo sobre el ITIN y mi reembolso.”</p>
+      <strong style="color: #1a237e; display: block; margin-top: 10px;">– José Martínez</strong>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA REDISEÑADA -->
+<section id="galeria">
+  <h2>Mi trabajo en imágenes</h2>
+  <div class="gallery">
+    <div style="position: relative;">
+      <img src="https://via.placeholder.com/400x250" alt="Oficina de María" />
+      <span style="position:absolute; bottom:10px; left:10px; background:#1a237e; color:white; padding:4px 10px; border-radius:4px;">Oficina</span>
+    </div>
+    <div style="position: relative;">
+      <img src="https://via.placeholder.com/400x250" alt="Conferencia comunitaria" />
+      <span style="position:absolute; bottom:10px; left:10px; background:#1a237e; color:white; padding:4px 10px; border-radius:4px;">Conferencia</span>
+    </div>
+    <div style="position: relative;">
+      <img src="https://via.placeholder.com/400x250" alt="Certificado preparadora" />
+      <span style="position:absolute; bottom:10px; left:10px; background:#1a237e; color:white; padding:4px 10px; border-radius:4px;">Certificado</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO REDISEÑADO -->
+<section id="contacto">
+  <h2>Contáctame</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 30px;">
+    <!-- Info de contacto -->
+    <div style="flex: 1; min-width: 260px;">
+      <p><i class="bi bi-geo-alt-fill" style="color:#f44336;"></i> Santa Ana, CA</p>
+      <p><i class="bi bi-telephone-fill" style="color:#4caf50;"></i> 714-123-4567</p>
+      <p><i class="bi bi-envelope-fill" style="color:#2196f3;"></i> maria@correo.com</p>
+      <a href="https://wa.me/17141234567" class="button" style="background:#25D366; margin-top:10px;">💬 Enviar WhatsApp</a>
+    </div>
+
+    <!-- Formulario elegante -->
+    <div style="flex: 2; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+      <form id="contactForm">
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required />
+        <input type="email" name="correo" placeholder="Tu correo electrónico" required />
+        <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit" class="button">📨 Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 María López. Todos los derechos reservados.</p>
+  <div class="social">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="mailto:maria@correo.com"><i class="bi bi-envelope-fill"></i></a>
+  </div>
+</footer>
+
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a href="https://wa.me/17141234567" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 26px;
+  border-radius: 50%;
+  padding: 14px 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-decoration: none;
+  z-index: 999;" title="Enviar mensaje por WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("¡Gracias! Tu mensaje fue enviado correctamente.");
+    this.reset();
+  });
+</script>
